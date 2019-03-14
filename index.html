@@ -1,29 +1,99 @@
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Train Schedule</title>
+</head>
+<body>
 
-//Base:
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Global Exchange Rates</h1>
+        </div> 
+           
+        <div>
+                <div id="schedule">Current Exchange Rates</div>
+                <table>
+                  <tr>
+                    <td>USD</td>
+                    <td>HKD</td>
+                    <td>JPN</td>
+                    <td>GBP</td>
+                    <td>EUR</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                  <tr>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                    <td>na</td>
+                  </tr>
+                </table><br>
 
+                <div id="add_train"></div> 
+            <form>
+                         <!--  form starts here -->
+                
+                <div class="form-group">
+                    <label for="formGroupExampleInput2">From</label>
+                    <input type="text" class="form-control" id="name" >
+                  </div>
 
-"https://api.usa.gov/crime/fbi/sapi/" + desired_endpiont + "?api_key=HbjtdCD1SFKwqi4nw0sJIBjmhdNgtUZMnu0apDbi"
-
-"https://api.usa.gov/crime/fbi/sapi/api" + "summarized" + "/state/CA/" + "rape/" + "2013/2015" + "?api_key=HbjtdCD1SFKwqi4nw0sJIBjmhdNgtUZMnu0apDbi"
-
-"/api/data/arrest/agencies/offense/{ori}/{variable}/{since}/{until}"
-
-"https://api.usa.gov/crime/fbi/sapi/api/data/arrest/agencies/offense/NewYork/violent_crime/2013/2015?api_key=HbjtdCD1SFKwqi4nw0sJIBjmhdNgtUZMnu0apDbi"
-
-"https://api.usa.gov/crime/fbi/sapi/api/data/arrest/agencies/offense/New%20York/violent_crime/2013/2015?api_key=HbjtdCD1SFKwqi4nw0sJIBjmhdNgtUZMnu0apDbi"
-
-
-/*
-Search based on:
-- Incident victim demographic
-- Incident offender demographic
-- Arrest demographic
-- FBI
-
-*/
-</script>
-
-
-
-
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2">To</label>
+                    <input type="text" class="form-control" id="destination" >
+                  </div>
+                 
+                  <button type="button" class="btn btn-primary">Submit</button>
+                
+            </form>
+            
+        </div>   
+    </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="trainschedule.js"></script>
+</body>
+</html>
