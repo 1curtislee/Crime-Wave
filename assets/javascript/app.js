@@ -13,11 +13,11 @@ $("#searchBtn").on("click",function(){
     method: "GET"
   })
     .then(function(response) {
-      console.log(response.rates.2018-03-12.USD);
+      console.log(response);
       //let exchange = response.rates.date;
 
 
-      $("#ex1").text(response.rates.)
+      //$("#ex1").text(response.rates.)
       $("#ex2").text(response.rates)
 
   })
