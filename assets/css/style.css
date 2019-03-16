@@ -11,3 +11,7 @@
 .select2 {
   float: right;
 }
+.btn {
+  background-color: blue;
+  color: white;
+}
