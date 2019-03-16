@@ -26,11 +26,26 @@
       </tr>
     </table><br>
 
-    <form>
-      <div class="w-25 p-3" style="background-color: #eee;">
-        <div class="form-group">
-          <label for="cur1">Currency 1</label>
-          <select class="form-control" id="cur1">
+      <div class="island">
+          <form>
+            <div class="w-50 p-3 select1" style="background-color: #eee;">
+            <label for="cur1">Currency 1</label>
+            <select class="form-control" id="cur1">
+              <option value="USD">USD - U.S. Dollar</option>
+              <option value="EUR">EUR - European Euro</option>
+              <option value="JPY">JPY - Japanese Yen</option>
+              <option value="GBP">GBP - British Pound</option>
+              <option value="CHF">CHF - Swiss Franc</option>
+              <option value="CAD">CAD - Canadian Dollar</option>
+              <option value="AUD">AUD - Australian Dollar</option>
+              <option value="ZAR">ZAR - South African Rand</option>
+            </select>
+        </div>
+        
+        
+        <div class="w-50 p-3 select2" style="background-color: #eee;">
+            <label for="cur2">Currency 2</label>
+            <select class="form-control" id="cur2">
             <option value="USD">USD - U.S. Dollar</option>
             <option value="EUR">EUR - European Euro</option>
             <option value="JPY">JPY - Japanese Yen</option>
@@ -39,25 +54,10 @@
             <option value="CAD">CAD - Canadian Dollar</option>
             <option value="AUD">AUD - Australian Dollar</option>
             <option value="ZAR">ZAR - South African Rand</option>
-          </select>
+            </select>
+          </div>
+        </form>
         </div>
-      </div>
-
-      <div class="w-25 p-3" style="background-color: #eee;">
-          <label for="cur2">Currency 2</label>
-          <select class="form-control" id="cur2">
-            <option value="USD">USD - U.S. Dollar</option>
-            <option value="EUR">EUR - European Euro</option>
-            <option value="JPY">JPY - Japanese Yen</option>
-            <option value="GBP">GBP - British Pound</option>
-            <option value="CHF">CHF - Swiss Franc</option>
-            <option value="CAD">CAD - Canadian Dollar</option>
-            <option value="AUD">AUD - Australian Dollar</option>
-            <option value="ZAR">ZAR - South African Rand</option>
-          </select>
-        </div>
-      </div>
-    </form>
 
     <button type="button" class="btn btn-primary" id="searchBtn">Submit</button>    
         
