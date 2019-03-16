@@ -3,8 +3,8 @@
 $("#searchBtn").on("click",function(){
   console.log("search")
 
-  var cur1 = $("#name").val() /*currency 1 from search input*/;
-  var cur2 = $("#destination").val() /*currency 2 from search input*/;
+  var cur1 = $("#cur1").val() /*currency 1 from search input*/;
+  var cur2 = $("#cur2").val() /*currency 2 from search input*/;
 
   var date = "2018-03-12" /*date from search input, yyyy-mm-dd format*/;
     
