@@ -17,37 +17,23 @@
             <h1>Global Exchange Rates</h1>
         </div> 
 
-        <div>
-                <div id="schedule">Current Exchange Rates</div>
-                <table>
-                  <tr>
-                    <td>USD</td>
-                    <td>HKD</td>
-                    <td>JPN</td>
-                    <td>GBP</td>
-                    <td>EUR</td>
-                  </tr>
-                  
-                </table><br>
-                <div id="add_train"></div> 
-
+        <div class="island">
                 <form>
-                    <div class="w-25 p-3" style="background-color: #eee;">
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <div class="w-50 p-3 select1" style="background-color: #eee;">
+                    <label for="currency1">Example select</label>
+                    <select class="form-control" id="currency1">
                       <option>money</option>
                       <option>cash money</option>
                       <option>debit</option>
                       <option>credit</option>
                       <option>debit</option>
                     </select>
-                  </div>
                 </div>
-
-                <div class="w-25 p-3" style="background-color: #eee;">
-                    <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                
+                
+                <div class="w-50 p-3 select2" style="background-color: #eee;">
+                    <label for="currency2">Example select</label>
+                    <select class="form-control" id="currency2">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -56,12 +42,22 @@
                     </select>
                   </div>
                 </div>
+                
                 </form>
 
                   <button type="button" class="btn btn-primary" id="searchBtn">Submit</button>    
             
-        </div>   
-    </div>
+        </div>
+    <div id="schedule">Current Exchange Rates</div>
+                <table>
+                  <tr>
+                    <td>USD</td>
+                    <td>HKD</td>
+                    <td>JPN</td>
+                    <td>GBP</td>
+                    <td>EUR</td>
+                  </tr>
+                </table>
     
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/app.js"></script>
