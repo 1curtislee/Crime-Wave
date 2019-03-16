@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Crime Tracker
 
 Something to search and how to display: 
@@ -13,6 +12,4 @@ starting point
 search inout that leads to: location, date range, type of crime, 
 
 possibly mulitple urls
-=======
-
->>>>>>> curtis
+ 
