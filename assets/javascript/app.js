@@ -1,16 +1,21 @@
-var cur1 = /*currency 1 from search input*/;
-var cur2 = /*currency 2 from search input*/;
-var dateStart = /*date from search input, yyyy-mm-dd format*/;
-var dateEnd = dateStart + 1; /* day + 1 */
+  
 
-//var rateURL = "https://api.exchangeratesapi.io/latest?symbols=" + cur1 + "," + cur2
+$("#searchBtn").on("click",function(){
+  console.log("search")
 
-var queryURL = "https://api.exchangeratesapi.io/history?start_at=" + dateStart + "&end_at=" + dateEnd + "&symbols=" + cur1 + "," + cur2
+  var cur1 = $("#name").val() /*currency 1 from search input*/;
+  var cur2 = $("#destination").val() /*currency 2 from search input*/;
 
-  // ajax request:
+  var date = "2018-03-12" /*date from search input, yyyy-mm-dd format*/;
+    
+  var queryURL ="https://api.exchangeratesapi.io/history?start_at=" + date + "&end_at=" + date + "&base=" + cur1 + "&symbols=" + cur2
+
   $.ajax({
-    url: queryURL,
+    url:queryURL,
     method: "GET"
   })
+    .then(function(response) {
+      console.log(response);
 
-  
+  })
+})
