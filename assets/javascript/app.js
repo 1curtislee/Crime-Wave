@@ -12,11 +12,11 @@ $("#searchBtn").on("click",function(){
   })
     .then(function(response) {
       console.log(response);
-      //let exchange = response.rates.date;
+      
 
 
-      //$("#ex1").text(response.rates.)
-      $("#ex2").text(response.rates)
+      $("#ex1").text(response.rates[date][cur1]);
+      $("#ex2").text(response.rates[date][cur2]);
 
   })
 })
