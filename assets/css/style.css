@@ -1,9 +1,15 @@
 .island {
-  margin: 10px;
+  margin: auto;
   padding: 10px;
-  width: 1000px;
-  height: 400px;
+  width: 75%;
+  height: 200px;
   background-color: rosybrown;
+  /* float: left; */
+}
+.date-button{
+  padding: 5px;
+  margin: 5px;
+  margin-right: 0px;
 }
 .select1 {
   display: inline-block;
@@ -12,6 +18,14 @@
   float: right;
 }
 .btn {
+  margin-top: 5px;
   background-color: blue;
   color: white;
+}.row {
+  height: 80px;
+  /* margin-bottom: 15px; */
+}
+.center {
+  line-height: 64px;
+  text-align: center;
 }
