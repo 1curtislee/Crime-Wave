@@ -4,7 +4,7 @@
   width: 500px;
   height: 200px;
   background-color: rosybrown;
-  float: left;
+  /* float: left; */
 }
 .date-button{
   padding: 5px;
@@ -21,7 +21,7 @@
   margin-top: 5px;
   background-color: blue;
   color: white;
-}
-.row{
-  
+}.row {
+  height: 80px;
+  /* margin-bottom: 15px; */
 }
