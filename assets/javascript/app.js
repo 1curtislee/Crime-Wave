@@ -1,6 +1,3 @@
-
-
-
 $("#searchBtn").on("click",function(){
   console.log("search")
 
@@ -21,3 +18,8 @@ $("#searchBtn").on("click",function(){
   })
 })
 
+/*
+'enter' event runs search/function
+date auto run as today, or run with historical date
+error messages
+*/
