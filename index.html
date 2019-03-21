@@ -13,24 +13,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Gloabl Exchange Rates</title>
 </head>
-<body onload="onBodyLoad()">
+<body onload="onBodyLoad();">
   <div class="container">
     <div class="jumbotron text-center">
       <h1>Global Exchange Rates</h1>
     </div> 
-    <!-- <div id="time">8:23pm</div> -->
-
-    <div id="schedule"></div>
-    <table>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table><br>
-
       <div class="island">
           <form>
             <div class="w-50 p-3 select1" style="background-color: #eee;">
@@ -44,6 +31,7 @@
               <option value="CAD">CAD - Canadian Dollar</option>
               <option value="AUD">AUD - Australian Dollar</option>
               <option value="ZAR">ZAR - South African Rand</option>
+              <option value="MXN">MXN - Mexican Peso</option>
             </select>
         </div>
         
@@ -59,27 +47,31 @@
             <option value="CAD">CAD - Canadian Dollar</option>
             <option value="AUD">AUD - Australian Dollar</option>
             <option value="ZAR">ZAR - South African Rand</option>
+            <option value="MXN">MXN - Mexican Peso</option>
             </select>
           </div>
 
-          <div class="input-group mb-3">
-              <input type="text" class="form-control" id="time"   aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group">
+              <input id="date" type="text" class="form-control date-button" placeholder="YYYY-MM-DD" aria-label="Recipient's username" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="searchBtn">Submit</button>
               </div>
             </div>
         </form>
         </div>    
+
+        <br>
         
-        <div class="container">
-            <div class="row">
-            <p class="col" id='ex1'></p><br>
-            <p class="col"id='ex2'></p>
+            <!-- <div class="container"> -->
+            <div class="island">
+              <div class="row" style="margin: 0;">Exchange rates: 
+              <p class="col w-10 center" style="background-color: white;" id='ex1'></p><br>
+              <p class="col w-10 center" style="background-color: rgb(165, 165, 223);" id='ex2'></p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>   
+      <!-- </div>  -->
   
- 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
 </body>
-</html>
