@@ -5,7 +5,7 @@ function onBodyLoad(){
     const readable = now.format('Y-MM-D');
     console.log(readable);
     console.log(time.placeholder);
-    time.value = readable;
+    time.placeholder = readable;
    
   //  time.innerText = readable;
 
