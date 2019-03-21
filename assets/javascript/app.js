@@ -1,3 +1,29 @@
+
+
+function onBodyLoad(){
+  const time = document.getElementById('time');
+  const now = moment();
+  const readable = now.format('Y-MM-D');
+  console.log(readable);
+  console.log(time.placeholder);
+  time.value = readable;
+ 
+//  time.innerText = readable;
+
+ // time.textContent = readable;
+
+//function updateTime(){
+  //const now = moment();
+  //const readable = now.format('Y/MM/D');
+ // time.textContent = readable;
+
+//}
+
+     //setInterval(updateTime,1000);
+    //updateTime();
+
+}
+
 $("#searchBtn").on("click",function(){
   console.log("search")
 
