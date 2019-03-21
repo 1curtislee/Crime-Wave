@@ -1,49 +1,32 @@
 var myStorage = window.localStorage;
 
+
+
 function onBodyLoad(){
   $("#ex1").text(getEx1);
-    $("#ex2").text(getEx2);
-    const time = document.getElementById('date');
-    const now = moment();
-    const readable = now.format('Y-MM-D');
-    console.log(readable);
-    console.log(time.placeholder);
-    time.placeholder = readable;
-   
-  //  time.innerText = readable;
+  $("#ex2").text(getEx2);
+  var getEx1 = localStorage.getItem('cur1');
+  var getEx2 = localStorage.getItem('cur2');
+  
+  const time = document.getElementById('date');
+  const now = moment();
+  const readable = now.format('Y-MM-D');
 
-   // time.textContent = readable;
+  //console.log(readable);
+  //console.log(time.placeholder);
 
-//function updateTime(){
-    //const now = moment();
-    //const readable = now.format('Y/MM/D');
-   // time.textContent = readable;
-
-//}
-
-       //setInterval(updateTime,1000);
-      //updateTime();
-var getEx1 = localStorage.getItem('cur1');
-var getEx2 = localStorage.getItem('cur2');
-
-
-
- function onBodyLoad(){
-   const time = document.getElementById('time');
-   const now = moment();
-   const readable = now.format('Y-MM-D');
-  console.log(readable);
-   console.log(time.placeholder);
-  time.value = readable;
- }
+  time.placeholder = readable;
+}
 
 $("#searchBtn").on("click",function(){
-  console.log("search")
-
   var cur1 = $("#cur1").val(); /*currency 1 from search input*/
   var cur2 = $("#cur2").val(); /*currency 2 from search input*/
   var date = $("#date").val().trim(); /*date from search input, yyyy-mm-dd format*/
+  if (date === ''){
+    date = moment().format('Y-MM-D')
+  }
   var queryURL = "https://api.exchangeratesapi.io/" + date + "?base=" + cur1 + "&symbols=" + cur1 + "," + cur2;
+
 
   $.ajax({
     url:queryURL,
