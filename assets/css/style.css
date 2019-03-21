@@ -1,9 +1,9 @@
 
 body {
-  background-image: url("../images/background1.jpg");
+  background-image: url("../images/background2.jpg");
 }
 .island {
-    background: rosybrown !important;
+    background: rgb(211, 211, 211) !important;
     border-radius: 4px !important;
     margin: auto !important;
     padding: 30px !important;
