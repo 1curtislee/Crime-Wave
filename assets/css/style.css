@@ -1,9 +1,20 @@
+body {
+  background-image: url("../images/background1.jpg");
+}
 .island {
-  margin: 10px;
-  padding: 10px;
-  width: 1000px;
-  height: 400px;
-  background-color: rosybrown;
+    background: rosybrown !important;
+    border-radius: 4px !important;
+    margin: auto !important;
+    padding: 30px !important;
+    padding-bottom: 24px !important;
+    width: 50% !important;
+    height: 200px !important;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+}
+.date-button{
+  padding: 5px;
+  margin: 5px;
+  margin-right: 0px;
 }
 .select1 {
   display: inline-block;
@@ -12,6 +23,16 @@
   float: right;
 }
 .btn {
+  margin-top: 5px;
   background-color: blue;
   color: white;
+}
+.row {
+  background-color: blueviolet;
+  height: 70px;
+}
+.center {
+  height: 70px;
+  line-height: 64px;
+  text-align: center;
 }
