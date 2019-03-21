@@ -14,7 +14,7 @@
 </head>
 <body onload="onBodyLoad();">
   <div class="container">
-    <div class="jumbotron text-center">
+    <div class="header">
       <h1>Global Exchange Rates</h1>
     </div> 
       <div class="island">
@@ -33,7 +33,6 @@
               <option value="MXN">MXN - Mexican Peso</option>
             </select>
         </div>
-        
         
         <div class="w-50 p-3 select2" style="background-color: #eee;">
             <label for="cur2">Currency 2</label>
@@ -57,20 +56,16 @@
               </div>
             </div>
         </form>
-        </div>    
-
-        <br>
-        
-            <!-- <div class="container"> -->
+        </div>
             <div class="island">
               <div class="row" style="margin: 0;">Exchange rates:
-              <p class="col w-10 center" style="background-color: white;" id='ex1'></p><br>
-              <p class="col w-10 center" style="background-color: rgb(165, 165, 223);" id='ex2'></p>
+              <p class="col w-10 center" style="background-color: white;" id='ex1'></p>
+              <p class="col w-10 center" style="border-left: 1px solid black;" id='ex2'></p>
             </div>
           </div>
         </div>
-      <!-- </div>  -->
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/javascript/app.js"></script>
 </body>
+</html>

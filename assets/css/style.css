@@ -1,15 +1,16 @@
 body {
-  background-image: url("../images/background2.jpg");
+  background-image: url("../images/background2.jpeg");
 }
 .island {
-    background: rgb(211, 211, 211) !important;
-    border-radius: 4px !important;
-    margin: auto !important;
-    padding: 30px !important;
-    padding-bottom: 24px !important;
-    width: 50% !important;
-    height: 200px !important;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.12) !important;
+    background: rgb(211, 211, 211);
+    border-radius: 4px;
+    margin: auto;
+    margin-bottom: 40px;
+    padding: 30px;
+    padding-bottom: 24px;
+    width: 50%;
+    height: 200px;
+    box-shadow: 100px 160px 400px black;
 }
 .date-button{
   padding: 5px;
@@ -28,11 +29,27 @@ body {
   color: white;
 }
 .row {
-  background-color: blueviolet;
-  height: 70px;
+  border: 3px solid black;
+  border-right: 0px;
+  line-height: 64px;
+  text-align: center;
+  background-color: grey;
+  height: 73px;
 }
 .center {
+  background-color: white;
+  border: 3px solid black;
+  border-top: 0px;
   height: 70px;
   line-height: 64px;
   text-align: center;
+}
+.header {
+  text-align: center;
+  background-color: rgb(211, 211, 211);
+  height: 70px;
+  border-radius: 4px;
+  margin-bottom: 145px;
+  padding: 10px;
+  box-shadow: 100px 70px 120px black;
 }
