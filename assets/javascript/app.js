@@ -1,4 +1,12 @@
+var myStorage = window.localStorage;
 
+var getEx1 = localStorage.getItem('cur1');
+var getEx2 = localStorage.getItem('cur2');
+
+function setUp() {
+  $("#ex1").text(getEx1);
+  $("#ex2").text(getEx2);
+}
 
 function onBodyLoad(){
   const time = document.getElementById('time');
@@ -7,22 +15,7 @@ function onBodyLoad(){
   console.log(readable);
   console.log(time.placeholder);
   time.value = readable;
- 
-//  time.innerText = readable;
 
- // time.textContent = readable;
-
-//function updateTime(){
-  //const now = moment();
-  //const readable = now.format('Y/MM/D');
- // time.textContent = readable;
-
-//}
-
-     //setInterval(updateTime,1000);
-    //updateTime();
-
-}
 
 $("#searchBtn").on("click",function(){
   console.log("search")
@@ -38,14 +31,9 @@ $("#searchBtn").on("click",function(){
   })
     .then(function(response) {
       console.log(response);
-      //console.log(queryURL);
-      $("#ex1").text(cur1 + ": " + response.rates[cur1]);
-      $("#ex2").text(cur2 + ": " + response.rates[cur2]);
+      $("#ex1").text(cur1 + ": " + response.rates[cur1])
+      $("#ex2").text(cur2 + ": " + response.rates[cur2])
+      localStorage.setItem("cur1",JSON.stringify(response.rates[cur1]));
+      localStorage.setItem("cur2",JSON.stringify(response.rates[cur2]));
   })
 })
-
-/*
-'enter' event runs search/function
-date auto run as today, or run with historical date
-error messages
-*/
