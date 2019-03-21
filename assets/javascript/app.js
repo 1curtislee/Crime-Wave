@@ -15,7 +15,7 @@ function onBodyLoad(){
   console.log(readable);
   console.log(time.placeholder);
   time.value = readable;
-
+}
 
 $("#searchBtn").on("click",function(){
   console.log("search")
