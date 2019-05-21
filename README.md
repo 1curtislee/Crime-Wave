@@ -1,5 +1,5 @@
 # Currency Converter
-compare two world currencies 
+## Compare two world currencies 
 
 [Deployed app](https://1curtislee.github.io/Currency-Converter/)
 
