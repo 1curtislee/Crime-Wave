@@ -1,9 +1,7 @@
 # Currency Converter
 
-[Deployed app](https://1curtislee.github.io/Currency-Converter/)
-
-Select Currency 1 and Currency 2, the click "Submit" to see current exchange rate
-To see a historical exchange rate, enter a date in the input below currencies
+Simple HTML app to convert major currencies quickly and easily. Select a base currency and one to convert to, then click "Submit" to see current exchange rate. To see a historical exchange rate, enter a date in the input below currencies.
+[Try it here!](https://1curtislee.github.io/Currency-Converter/)
 
 ### Tools:
 * HTML
